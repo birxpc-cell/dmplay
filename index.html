@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Play — Official Registration Page</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: #0b0f19;
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Top Background Glow */
+        .top-banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 260px;
+            background: linear-gradient(180deg, #3b82f6 0%, rgba(59, 130, 246, 0.2) 60%, rgba(11, 15, 25, 0) 100%);
+            filter: blur(20px);
+            z-index: 0;
+            opacity: 0.5;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Profile Photo Container */
+        .profile-wrapper {
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3b82f6;
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+            background-color: #1e293b;
+        }
+
+        /* Title & Subtitle */
+        .page-title {
+            font-size: 26px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-subtitle {
+            font-size: 14px;
+            color: #94a3b8;
+            line-height: 1.5;
+            font-weight: 500;
+            max-width: 360px;
+            margin-bottom: 30px;
+        }
+
+        /* Main Card Box */
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 24px;
+            padding: 24px 20px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Register Now Button */
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 800;
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+            border: 2px solid #60a5fa;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+
+        .features-text {
+            font-size: 13px;
+            color: #cbd5e1;
+            font-weight: 600;
+        }
+
+        /* Footer Links & Disclaimer */
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 11px;
+            color: #64748b;
+            text-align: center;
+            line-height: 1.6;
+            max-width: 400px;
+        }
+
+        .footer-links {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-links a:hover {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Glow background -->
+    <div class="top-banner"></div>
+
+    <div class="container">
+        <!-- Profile Image -->
+        <div class="profile-wrapper">
+            <img src="https://i.ibb.co/n860b0w4/dm-play-logo.png" alt="DM Play Logo" class="profile-img">
+        </div>
+
+        <!-- Title & Subtitle -->
+        <h1 class="page-title">DM Play Official</h1>
+        <p class="page-subtitle">Join now to get started instantly with secure access and exclusive updates.</p>
+
+        <!-- Main Card with Register Button -->
+        <div class="card">
+            <a href="https://www.dmplay20.com/#/register?invitationCode=64332105926" class="cta-button" target="_blank">
+                🚀 REGISTER NOW
+            </a>
+            <div class="features-text">
+                ✨ Fast Registration · Secure & Verified Link
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with Privacy Policy & Educational Disclaimer -->
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#" onclick="alert('Privacy Policy: We respect your privacy and protect your data.'); return false;">Privacy Policy</a>
+            <a href="#" onclick="alert('Terms & Conditions apply.'); return false;">Terms</a>
+        </div>
+        Educational purpose only — not financial advice. © 2026 DM Play. All rights reserved.
+    </div>
+
+</body>
+</html>
